@@ -299,7 +299,9 @@ void loop()
     listo_enviar = true;
 
     // Control discreto
-    uk = 1.5436*(ek - 0.9553*ek_1) - 0.8477*uk_1;
+    //uk = 1.5436*(ek - 0.9553*ek_1) - 0.8477*uk_1;
+    // Control discreto
+    uk = 1.5436*(ek - 0.9553*ek_1) + 0.8477*uk_1;
     ek_1 = ek;
     uk_1 = uk;
 
